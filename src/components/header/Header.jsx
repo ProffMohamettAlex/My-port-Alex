@@ -12,7 +12,7 @@ const Header = () => {
         <h5 className="text-light">Full-stack Developer</h5>
         <CTA />
         <a href="#contact" className="scroll__down">
-          Scroll Down
+          Rebeat Again 
         </a>
         <HeaderSocials />
       </div>
