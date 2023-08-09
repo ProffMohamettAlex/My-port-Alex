@@ -62,3 +62,6 @@ footer a {
         margin-bottom: 2.6rem;
     }
 }
+.footer__logo span {
+    color: rgb(255, 242, 1);
+}

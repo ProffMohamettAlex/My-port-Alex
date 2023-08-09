@@ -12,7 +12,7 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Bookstore',
+      title: 'Web Design',
       img: IMG1,
       description:
         'BookStore app that allows users to store books and update progress',
@@ -22,7 +22,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'FakeStore',
+      title: 'Graphic Designer',
       img: IMG4,
       description:
         'FakeStore app that provides information about available products and their details',
@@ -32,7 +32,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'To-Do-App',
+      title: 'Google ads',
       img: IMG2,
       description: 'User friendly app to plan your day and manage tasks',
       technologies: 'JavaScript | Webpack',
@@ -41,7 +41,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'Shelter',
+      title: 'Web Development',
       img: IMG3,
       description:
         'Fully responsive interactive website built based on Figma design',
@@ -51,7 +51,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'World News',
+      title: 'E-Commerce App',
       img: IMG5,
       description:
         'Fully responsive interactive website built based on Adobe XD design',
@@ -61,7 +61,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: 'Math Resource',
+      title: 'CCtv Settings',
       img: IMG6,
       description:
         'Real-world group project which is still in progress and will provide educational platform for future young developers',
@@ -74,7 +74,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Service</h2>
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
@@ -94,7 +94,7 @@ const Portfolio = () => {
                 className="btn"
                 rel="noreferrer"
               >
-                GitHub
+                Visit Website
               </a>
               <a
                 href={pro.link}
@@ -102,7 +102,7 @@ const Portfolio = () => {
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Visit Website
+                Buy Now
               </a>
             </div>
           </article>

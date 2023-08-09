@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 import { MdOutlineEmail } from 'react-icons/md';
 import './contact.css';
 
@@ -8,13 +9,14 @@ const Contact = () => {
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
+    toast.success('Message Sent Please Wait To Answer!') 
     setMessage(true);
     emailjs
       .sendForm(
-        'service_k2qawqh',
-        'template_c6rkpn6',
+        'service_uj3u7hc',
+        'template_r0jf9dx',
         formRef.current,
-        'X7K7ebhIeOy3YwHki'
+        '_m4jInncAvRmvMyig'
       )
       .then(
         (result) => {
@@ -65,8 +67,8 @@ const Contact = () => {
           ></textarea>
           <button type="submit" className="btn btn-primary">
             Send Message
-          </button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          </button> 
+          {message && <span></span>}
         </form>
       </div>
     </section>
